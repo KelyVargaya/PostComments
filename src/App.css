@@ -1,28 +1,65 @@
-.App {
-  text-align: center;
+#root{
+  background: #6da2a9;
+  width: 60%;
+  padding-bottom: 200px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 1%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.caja{
+  background: #9fcbd2;
+  border-radius: 10px;
+  padding: 1%;
+}
+h3{
+  color: #6da2a9;
+}
+.caja input{
+  width: 90%;
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 25px;
+  margin-bottom: 8px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.caja button{
+  background: #fbe783;
+  border: 2px solid #fbe783;
+  width: 30%;
+  border-radius: 10px;
+  height: 25px;
+  color: #6da2a9;
+  font-weight: bold;
+}
+
+
+.contador{
+  color: #a0ccd3;
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+.foto{
+ float: left;
+}
+
+
+.name{
   color: white;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
 }
-
-.App-title {
-  font-size: 1.5em;
+.result button{
+  background: transparent;
+  border:none;
 }
-
-.App-intro {
-  font-size: large;
+a{
+  margin-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.result{
+  margin-bottom: 15px;
 }
