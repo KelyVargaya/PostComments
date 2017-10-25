@@ -1,5 +1,11 @@
 import store from './store'
 
+export const createList = () =>{
+
+
+
+}
+
 export const addComments = () => {
    let comments = store.getState().newcomments
    
