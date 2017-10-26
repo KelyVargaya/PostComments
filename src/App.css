@@ -15,14 +15,18 @@
 h3{
   color: #6da2a9;
 }
-.caja input{
+.caja .input{
   width: 90%;
   border: 2px solid white;
   border-radius: 10px;
   height: 25px;
   margin-bottom: 8px;
 }
+#n{
+  border: none;
+  border-radius: 10px;
 
+}
 .caja button{
   background: #fbe783;
   border: 2px solid #fbe783;
@@ -39,7 +43,7 @@ h3{
   font-weight: bold;
 }
 
-ul{
+ul, li{
   list-style: none;
 }
 

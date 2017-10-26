@@ -1,13 +1,14 @@
 
 import createCommets from 'redux-zero'
 
-const COMMENTS = [
- 
+const COMMENT = [
+  
 ]
 
-const add = {
-   comentario : COMMENTS,
-}
+const initialState = {
+	comments : COMMENT
+};
 
-const store = createCommets (add)
-export default store
+const store = createCommets(initialState);
+
+export default store;
