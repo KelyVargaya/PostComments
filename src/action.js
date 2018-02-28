@@ -1,7 +1,16 @@
 import store from "./store";
 import firebase from "firebase"
 
-
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD0Zplpxd9uBLc2J647mP4_BnV6paFrv3c",
+    authDomain: "post-comments-e2041.firebaseapp.com",
+    databaseURL: "https://post-comments-e2041.firebaseio.com",
+    projectId: "post-comments-e2041",
+    storageBucket: "",
+    messagingSenderId: "932435090073"
+  };
+  firebase.initializeApp(config);
 
 const snapshotToArray = snapshot => {
    let comments = []
