@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "http://KelyVargaya.github.io/PostComments",
   "dependencies": {
+    "firebase": "^4.10.1",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
-    "redux-zero": "^4.1.1"
+    "redux-zero": "^4.10.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,5 +22,16 @@
   },
   "devDependencies": {
     "gh-pages": "^1.0.0"
+  },
+  "description": "Foro con React-Redux",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KelyVargaya/PostComments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KelyVargaya/PostComments/issues"
   }
 }

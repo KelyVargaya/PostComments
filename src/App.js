@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import {addComments, deleteComments} from './action';
+import {readAllComments, addComments, deleteComments} from './action';
 import {Button, FormGroup, FormControl, InputGroup } from 'react-bootstrap';
 import {connect} from 'redux-zero/react';
 import './App.css';
 
-const CreateLista = ({ name, comment, index }) => {
+const CreateLista = ({ name, comment, id }) => {
   return (
     <div className="result">
        <div className="foto"><img src="https://s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" alt=""/></div>
@@ -15,11 +15,14 @@ const CreateLista = ({ name, comment, index }) => {
               <p>{comment}</p>
           </li>
         </div>
-        <button onClick={() => deleteComments(index)}><a>DeleteComment</a></button>
+        <button onClick={() => deleteComments(id)}><a>DeleteComment</a></button>
           <a href="">Report as abuse</a>
     </div>
   );
 }
+
+readAllComments();
+
 const App = ({ comments }) => {
   const onSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +32,7 @@ const App = ({ comments }) => {
       this.comment.value = '';
     }
   }
+  console.log ('app-comments', comments);
   return (
     <div>
       <div className='caja'>
@@ -50,7 +54,7 @@ const App = ({ comments }) => {
       <div>
         <h4>COMMENTS</h4>
         <p className="contador">{comments.length} comments: </p>
-        <ul>{comments.map((item, index) => <CreateLista key={index} name={item.name} comment={item.comment} index={index} />)}
+        <ul>{comments.map((item) => <CreateLista key={item.id} name={item.name} comment={item.comment} id={item.id} />)}
         </ul>
       </div>
     </div>
